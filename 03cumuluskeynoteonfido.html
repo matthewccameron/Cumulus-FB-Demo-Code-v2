@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="manifestD2.json">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+        <title>Cumulus Bank</title>
+
+        <style>
+    
+         
+ body { margin: 0; padding: 0; background-color: #3B5998; }
+
+
+
+
+
+         .app-fixed-header-image{
+             width: 100%;
+             position: fixed;
+             top: 0;
+             left: 0;
+             display: block;
+             z-index: 999;
+         }
+
+         .app-fixed-footer-image{
+             width: 100%;
+             position: fixed;
+             bottom: 0;
+             left: 0;
+             display: block;
+             z-index: 1000;
+         }
+
+
+         .app-content-image {
+             width: 100%;
+             display: block;
+
+             margin-top: -20px;
+         }
+		 
+		 
+		
+        </style>
+    </head>
+
+    <body>
+        <!-- Fixed header image, NOTE: Remove the next line if no header is needed -->
+        
+        		<img class="app-fixed-header-image" src="img/02cumulusheader1.png" />
+       
+
+       
+        <a href="04cumuluskeynote.html">
+          
+            <img class="app-content-image" src="img/03onfidoloader.png" />
+        </a>
+        
+ 		
+
+
+<img class="app-fixed-footer-image" src="img/02cumulusfooter.png" />
+
+
+        <script>
+         /**
+          * NOTE: The following lines control the status bar behaviour for this screen in particular on the deployed phone app.
+          */
+         document.addEventListener("deviceready", onDeviceReady, false);
+
+         function onDeviceReady() {
+             // Un-comment the next line if screen has light color fixed header
+             StatusBar.styleDefault();
+
+             // Un-comment the next line if screen has dark background
+             // StatusBar.styleBlackTranslucent();
+         }
+
+        var a=document.getElementsByTagName("a");
+
+        for(var i=0;i<a.length;i++)
+        {
+            a[i].onclick=function()
+            {
+                window.location=this.getAttribute("href");
+                return false
+            }
+        }
+        </script>
+        
+        
+ 
+        
+        
+    </body>
+</html>
